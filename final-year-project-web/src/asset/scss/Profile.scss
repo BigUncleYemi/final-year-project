@@ -1,0 +1,72 @@
+@import './variables.scss';
+
+.Profile {
+  min-height: 100vh;
+  background: #f2f2f2;
+
+  &-Container {
+    height: 100%;
+
+    max-width: 1024px;
+    margin: auto;
+
+    &-Banner {
+      height: 300px;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &-Headline {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+
+    &_stat {
+      display: flex;
+      flex-wrap: wrap;
+      p {
+        margin-bottom: 0px;
+      }
+    }
+
+    strong {
+      font-size: 30px;
+      color: $appgold;
+    }
+
+    &>div:nth-child(1){
+      padding: 60px 15px 15px;
+    }
+  }
+
+  &-body{
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+
+    &-top {
+
+      h3 {
+        font-weight: 700;
+        font-size: 20px;
+      }
+      strong {
+        font-size: 30px;
+        color: $appgold;
+      }
+    }
+
+    &-center {
+      padding: 0px 20px;
+
+      button, button:hover, button:active {
+        background: $appgold;
+        color: $appblack;
+        border: 1px solid $appblack;
+      }
+    }
+    &-bottom {
+      padding: 20px;
+    }
+
+  }
+}

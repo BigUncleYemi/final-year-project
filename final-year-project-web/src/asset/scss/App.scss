@@ -1,0 +1,97 @@
+@import './variables.scss';
+
+.Auth {
+  min-height: 100vh;
+  background: #fff;
+  color: $notblack !important;
+
+  &-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    &-form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      box-shadow: 0px 2px 17px #0000001a;
+        
+      .ant-btn-primary {
+        background-color: #f9f9f9 !important;
+        border: 1px solid $appblack;
+        color: $appblack;
+      }
+
+      a{
+        color: $appblack;
+        text-decoration: none;
+      }
+
+      label {
+        // color: #F7E002 !important;
+        background-color: transparent;
+        &.ant-radio-button-wrapper {
+          border: 1px solid $appblack;
+          background-color: $appgold;
+          color: $appblack !important;
+        }
+
+        &.ant-radio-button-wrapper-checked {
+          background-color: $appblack;
+          color: #F7E002 !important;
+          border: 1px solid $appgold !important;
+        }
+      }
+
+      .ant-input-affix-wrapper, input, input:focus {
+        background-color: transparent !important;
+        border: 1px solid $appblack;
+      }
+
+
+      &_name {
+        margin-right: 30px;
+        padding: 46px;
+        h1 {
+          font-weight: 700;
+          margin-top: -50px;
+          margin-bottom: 40px;
+          font-size: 230%;
+
+          &#reg{
+            margin-top: 35px;
+            margin-bottom: 21px;
+          }
+        }
+        p {
+          font-size: 22px;
+          text-align: center;
+          font-family: 'Parisienne', cursive;
+          font-weight: 800;
+          color: $notblack;
+        }
+      }
+
+      .ant-form{
+        background: #f9f9f9;
+        padding: 50px;
+
+        @media (max-width: 576px) { 
+          padding: 20px;
+        }
+
+        input:-internal-autofill-selected {
+          color: transparent !important;
+        }
+
+        input{
+          border: none !important;
+          outline: none !important;
+        }
+
+      }
+    }
+  }
+}

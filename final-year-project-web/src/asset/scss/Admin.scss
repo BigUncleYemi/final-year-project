@@ -1,0 +1,161 @@
+@import './variables.scss';
+
+.Admin {
+  min-height: 100vh;
+  background-color: #f2f2f2;
+
+  &-Container {
+    height: 100%;
+
+    max-width: 1024px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+
+    &-filter {
+      padding: 10px;
+      background-color: white;
+      border: 1px solid #e0e0e0;
+      height: 100%;
+      >div {
+        // border: 0.4px solid $appgold;
+        padding: 10px;
+      }
+      label {
+        font-weight: 600;
+      }
+      .ant-input-affix-wrapper {
+        border-radius: 40px;
+      }
+      .ant-checkbox-wrapper {
+        margin-left: 8px;
+      }
+      .ant-input-affix-wrapper {
+        border-radius: 40px;
+      }
+      .ant-input-affix-wrapper, input, input:focus {
+        background-color: transparent !important;
+        border: 1px solid $appblack;
+        color: $appgold;
+      }
+      .ant-checkbox-wrapper {
+        margin-left: 8px;
+      }
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: $appgold !important;
+        border-color: $appblack;
+      }
+      .ant-checkbox-inner, .ant-checkbox-inner:hover {
+        background-color: transparent !important;
+        border: 1px solid $appblack;
+      }
+    }
+
+    &-list {
+      padding: 10px 0px 10px;
+
+      >div {
+        padding: 10px 0px 10px;
+      }
+
+      hr {
+        border-top: 0.4px solid $appgold;
+      }
+
+      &_filter-bar {
+        display: flex;
+        align-items: center;
+      }
+
+      &_filtered-list {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        height: 100%;
+        margin-top: 0px;
+
+        &-empty {
+          width: 100vw;
+          display: flex;
+          justify-content: center;
+          padding-top: 100px;
+          padding-bottom: 100px;
+
+          h2 {
+            color: #63747dd9;
+            font-weight: 700;
+            font-size: 29px;
+          }
+        }
+      }
+    }
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: $appgold;
+    text-shadow: 0 0 0.25px currentColor;
+  }
+
+  .ant-tabs-ink-bar, .ant-tabs-ink-bar:hover{
+    background: $appgold;
+  }
+
+  .ant-tabs-tab-btn:focus, .ant-tabs-tab-remove:focus, .ant-tabs-tab-btn:active, .ant-tabs-tab-remove:active {
+    color: $appgold;
+  }
+}
+
+.restaurant-card {
+  // Debug
+  // border: 1px solid red;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin: 10px 0px;
+  background-color: #fff;
+  width: 98%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &_img {
+    min-width: 300px;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-body {
+    padding: 10px 15px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 150px;
+
+    h3 {
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-bottom: 3px;
+    }
+
+    strong {
+      color: #CFB53B;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+  &_stat {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    align-items: center;
+    strong {
+      color: #CFB53B;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+}
